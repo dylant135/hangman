@@ -10,19 +10,26 @@
 </head>
 <body>
     <h1>Hangman</h1>
-    <h2 id="displayText">sdjfkhlaj</h2>
+    <p id="instructions">One person will enter a word with a optional hint. Then, the other person will guess letters trying to figure out the word. 6 wrong gusses and you lose</p>
     <div id="createContainer">
         <button type="button" id="createBtn">New Game</button>
     </div>
-    <form>
+    <form id="wordForm">
         <label for="word">Enter a Word</label><br>
         <input type="text" id="word"><br>
+        <label for="hint">Hint</label><br>
+        <input id="hint" type="text" placeholder="(optional)">
+        <br>
         <button type="button" id="submit">Submit</button>
     </form>
 
     <div id="hangman">
-        <img src="hangman0.jpeg" alt="hangman">
+        <img src="hangman0.jpeg" id="hangimg" alt="hangman">
     </div>
+
+    <h2 id="hintDisplay"></h2>
+    <h2 id="displayText"></h2>
+    <h2 id="wordDisplay"></h2>
 
     <div id="buttonsContainer">
         <button type="button" class="choisebtn">A</button>

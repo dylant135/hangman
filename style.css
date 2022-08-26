@@ -12,8 +12,6 @@ h1 {
 
 #displayText {
     text-align: center;
-    padding: 10px;
-    margin: 15px;
     color: #9a0952;
 }
 
@@ -34,7 +32,7 @@ h1 {
     background-color: #0279b1;
 }
 
-form {
+#wordForm {
     width: 500px;
     text-align: center;
     margin: auto;
@@ -61,16 +59,20 @@ label, input, button {
 #hangman {
     width: 50vw;
     margin: auto;
+    margin-bottom: 20px;
     text-align: center;
+    display: none;
 }
 
 #buttonsContainer {
     width: 500px;
+    height: 20vh;
     margin: auto;
     margin-bottom: 20px;
     text-align: center;
     display: flex;
     flex-wrap: wrap;
+    display: none;
 }
 
 .choisebtn {
@@ -78,4 +80,18 @@ label, input, button {
     padding: 3px;
     margin: 3px;
     font-size: 1.2em;
+}
+.choisebtn:hover {
+    background-color: #2bbafd;
+}
+
+#wordDisplay {
+    text-align: center;
+    padding: 15px;
+    margin: 20px;
+    font-size: 2em;
+}
+#instructions {
+    text-align: center;
+    margin: 10px 0px;
 }
